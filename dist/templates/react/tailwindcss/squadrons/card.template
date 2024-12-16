@@ -1,0 +1,11 @@
+import React from "react";
+import ArmyForm from "../platoons/form.platoons"
+interface ArmyCardTypes {}
+
+const ArmyCard = ({}:ArmyCardTypes) => {
+  return <div className="p-8 rounded-lg shadow">
+    <ArmyForm />
+  </div>;
+};
+
+export default ArmyCard

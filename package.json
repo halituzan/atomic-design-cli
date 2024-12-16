@@ -1,0 +1,26 @@
+{
+  "name": "atomic-design-cli",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Halit Uzan",
+  "license": "ISC",
+  "email": "halit.uzan@gmail.com",
+  "description": "A CLI for Atomic Design Systems",
+  "bin": {
+    "atomic-design": "./dist/index.js"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

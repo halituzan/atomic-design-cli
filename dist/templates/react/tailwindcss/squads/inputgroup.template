@@ -1,0 +1,19 @@
+import React,{Dispatch,SetStateAction} from "react";
+import ArmyInput from "../soldiers/input.soldiers"
+import ArmyLabel from "../soldiers/label.soldiers"
+interface ArmyInputGroupTypes {
+    id?:string;
+    label?:string;
+    placeholder?:string;
+    value: any;
+    setValue: Dispatch<SetStateAction<any>>;
+}
+
+const ArmyInputGroup = ({id,label,value,setValue,placeholder}:ArmyInputGroupTypes) => {
+  return  <div className="flex flex-col">
+        <ArmyLabel id={id} label={label} />
+        <ArmyInput id={id} value={value} setValue={setValue} placeholder={placeholder} />
+    </div>;
+};
+
+export default ArmyInputGroup

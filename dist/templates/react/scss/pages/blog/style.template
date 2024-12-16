@@ -1,0 +1,10 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}

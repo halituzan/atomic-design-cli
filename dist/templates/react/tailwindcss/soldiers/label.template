@@ -1,0 +1,12 @@
+import React from "react";
+
+interface ArmyLabelTypes {
+    label?:string;
+    id?:string
+}
+
+const ArmyLabel = ({label,id}:ArmyLabelTypes) => {
+  return <label htmlFor={id} className="mb-2"> {label}</label>;
+};
+
+export default ArmyLabel

@@ -1,0 +1,14 @@
+import React from "react";
+
+interface ArmyButtonTypes {
+    text:string;
+    role?:string;
+    handleClick?:()=>void;
+    disabled?:boolean
+}
+
+const ArmyButton = ({text,role="button",handleClick,disabled=false}:ArmyButtonTypes) => {
+  return <button disabled={disabled} role={role} onClick={handleClick} className="bg-blue-600 text-white px-4 py-2 rounded" >{text}</button>;
+};
+
+export default ArmyButton

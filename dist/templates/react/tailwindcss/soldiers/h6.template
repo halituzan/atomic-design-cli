@@ -1,0 +1,13 @@
+import React from "react";
+
+type Props = { text: string };
+
+const Heading6 = ({ text }: Props) => {
+  return (
+    <h6 className='mb-4 text-md md:text-lg lg:text-xl font-extrabold leading-none tracking-tight text-slate-950  dark:text-white'>
+      {text}
+    </h6>
+  );
+};
+
+export default Heading6;

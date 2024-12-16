@@ -1,0 +1,17 @@
+import React, { Dispatch, SetStateAction } from "react";
+
+interface ArmyInputTypes {
+    type?:string;
+    placeholder?:string;
+    value: any;
+    setValue: Dispatch<SetStateAction<any>>;
+    id?:string;
+    disabled?:boolean;
+    readOnly?:boolean;
+}
+
+const ArmyInput = ({type="text",placeholder,value,setValue,id,disabled=false,readOnly=false}:ArmyInputTypes) => {
+  return <input disabled={disabled} readOnly={readOnly} id={id} type={type} placeholder={placeholder} value={value} onChange={e=>setValue(e.target.value)} className="border border-gray-300 p-2 rounded w-full"/>;
+};
+
+export default ArmyInput

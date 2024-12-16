@@ -1,0 +1,28 @@
+"use client"
+import React, {useState} from "react";
+import ArmyInputGroup from "../squads/inputgroup.squads"
+import ArmyButton from "../soldiers/button.soldiers"
+interface ArmyFormTypes {
+   
+}
+
+const ArmyForm = ({}:ArmyFormTypes) => {
+    const [firstName,setFirstName] = useState<string>("")
+    const [lastName,setLastName] = useState<string>("")
+    const [email,setEmail] = useState<string>("")
+
+  return <div className="flex flex-col">
+    <div className="flex flex-col mb-4">
+        <ArmyInputGroup value={firstName} setValue={setFirstName} id="firstName" label="First Name" placeholder="Type first name..."/>
+    </div>
+    <div className="flex flex-col mb-4">
+      <ArmyInputGroup value={lastName} setValue={setLastName} id="lastName" label="Last Name" placeholder="Type last name..."/>
+    </div>
+    <div className="flex flex-col mb-4">
+      <ArmyInputGroup value={email} setValue={setEmail} id="email" label="Email" placeholder="Type email..."/> 
+    </div>
+    <ArmyButton text="Save" />
+  </div>;
+};
+
+export default ArmyForm

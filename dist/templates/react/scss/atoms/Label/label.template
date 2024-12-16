@@ -1,0 +1,17 @@
+import React from "react";
+import Text from "../Text";
+import "./button.scss";
+interface AtomicLabelProps {
+  label: string | undefined;
+  id?: string;
+}
+
+const ArmyLabel = ({ label, id }: AtomicLabelProps) => {
+  return (
+    <label htmlFor={id} className='mb-2'>
+      <Text text={label} />
+    </label>
+  );
+};
+
+export default ArmyLabel;
